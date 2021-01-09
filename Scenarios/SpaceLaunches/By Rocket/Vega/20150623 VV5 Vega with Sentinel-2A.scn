@@ -1,0 +1,83 @@
+BEGIN_DESC
+Launch Vega with Sentinel-2A(1130kg) from Kourou ELV on June 23rd, 2015 01:52 UTC. Target Orbit 787km x 788km x 98.58deg. The Sentinel Satellite Fleet is part of the Copernicus program – the European Commission's Earth Observation Program formerly known as GMES (Global Monitoring for Environment and Security). Copernicus aims to achieve an autonomous and operational Earth observation capacity.
+
+Time: T-30 seconds to launch. Automatic launch sequence started.
+
+Required add-ons:
+
+- Vega launcher(http://www.orbithangar.com/searchid.php?ID=2546)
+
+- Spacecraft4(http://francophone.dansteph.com/?page=addon&id=202)
+
+- Multistage2015 - for Orbiter 2016(http://orbithangar.com/searchid.php?ID=7010)
+END_DESC
+
+BEGIN_ENVIRONMENT
+  System Sol
+  Date MJD 57196.077407
+  Script SpaceLaunches/Vega/Vega_VV05
+END_ENVIRONMENT
+
+BEGIN_FOCUS
+  Ship Vega-VV05
+END_FOCUS
+
+BEGIN_CAMERA
+  TARGET Vega-VV05
+  MODE Extern
+  POS 5.937757 0.740000 -110.960000
+  TRACKMODE TargetRelative
+  FOV 50.00
+END_CAMERA
+
+BEGIN_HUD
+  TYPE Surface
+END_HUD
+
+BEGIN_MFD Left
+  TYPE Surface
+  SPDMODE 1
+END_MFD
+
+BEGIN_MFD Right
+  TYPE Orbit
+  PROJ Frame
+  FRAME Equator
+  REF Earth
+END_MFD
+
+BEGIN_SHIPS
+Vega-VV05:Multistage2015
+  STATUS Landed Earth
+  POS -52.742783 5.242636
+  HEADING 180.0
+  PRPLEVEL 0:1.00000 1:1.000000 2:1.000000 3:1.000000
+  CONFIG_FILE Config\SpaceLaunches\Vega\Vega_VV05.ini
+  GUIDANCE_FILE Config\SpaceLaunches\Vega\Vega_VV05.txt
+  CONFIGURATION 0
+  CURRENT_STAGE 1
+  CURRENT_PAYLOAD 1
+  FAIRING 1
+  ALT_STEPS 100,350,7000,35000
+  PEG_PITCH_LIMIT 35.000
+  PEG_MC_INTERVAL 0.100
+  GNC_RUN 1
+  GNC_PROGRAM 0
+  GNC_STEP 1
+  GNC_AUTO_JETTISON 0.000000
+END
+SL-Sentinel-2A:SpaceLaunches\Sentinel\SL-Sentinel-2A
+  STATUS Landed Earth
+  POS -52.5647293 5.0566391
+  HEADING 180.00
+  ALT 0.000
+  AROT 150.975 24.235 177.622
+  ATTACHED 0:0,Vega-VV05
+  AFCMODE 7
+  PRPLEVEL 0:1.000000
+  NAVFREQ 0 0
+  CONFIGURATION 1
+  CURRENT_PAYLOAD 0
+  SEQ 0 -2 0.000000
+END
+END_SHIPS
