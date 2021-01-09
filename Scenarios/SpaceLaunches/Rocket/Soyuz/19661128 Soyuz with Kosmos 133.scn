@@ -1,0 +1,88 @@
+BEGIN_HYPERDESC
+<h1>Soyuz with Kosmos-133(Soyuz unmanned) spacecraft from Baikonur LC31</h1>
+
+<p><b>Launch date: November 28th, 1966 13:00:00UTC</b></p>
+<p><b>Launch site: Baikonur LC31</b></p>
+<p><b>Launch vehicle: Soyuz 11A511</b></p>
+<p><b>Orbit: LEO - 173km x 219km x 51.8deg</b></p>
+<p><b>Payload: Kosmos-133(Soyuz unmanned)(6450kg)</b></p>
+<br><br>
+<p>30 seconds to launch. Launch is automatic. After autopilot reached orbit, press J to jettison Soyuz spacecraft from Soyuz launcher. Press K to deploy solar panels.</p>
+END_HYPERDESC
+
+BEGIN_ENVIRONMENT
+  System Sol
+  Date MJD 39457.457986
+END_ENVIRONMENT
+
+BEGIN_FOCUS
+  Ship Soyuz
+END_FOCUS
+
+BEGIN_CAMERA
+  TARGET Soyuz
+  MODE Extern
+  POS 7.610022 46.993084 7.356216
+  TRACKMODE GlobalFrame
+  FOV 40.00
+END_CAMERA
+
+BEGIN_HUD
+  TYPE Surface
+END_HUD
+
+BEGIN_MFD Left
+  TYPE Surface
+  SPDMODE 1
+END_MFD
+
+BEGIN_MFD Right
+  TYPE Orbit
+  PROJ Ship
+  FRAME Equator
+  ALT
+  REF Earth
+END_MFD
+
+
+BEGIN_SHIPS
+Soyuz:Multistage2015
+  STATUS Landed Earth
+  POS 63.3200945 45.9123065
+  HEADING 45.00
+  PRPLEVEL 0:1.000 1:1.000 2:1.000 3:1.000
+  NAVFREQ 0 0
+  CONFIG_FILE Config\SpaceLaunches\Soyuz\Soyuz_Kosmos-133.ini
+  GUIDANCE_FILE Config\SpaceLaunches\Soyuz\Soyuz_Kosmos-133.txt
+  CONFIGURATION 0
+  STAGE_STATE 2
+  STAGE_IGNITION_TIME 0.000
+  CURRENT_BOOSTER 1
+  CURRENT_STAGE 1
+  CURRENT_INTERSTAGE 1
+  CURRENT_PAYLOAD 1
+  FAIRING 1
+  ALT_STEPS 100,350,1400,35000
+  PEG_PITCH_LIMIT 35.000
+  PEG_MC_INTERVAL 0.100
+  GNC_RUN 1
+  GNC_PROGRAM 0
+  GNC_STEP 1
+  GNC_AUTO_JETTISON 1.000000
+END
+OK_PAO_Active_servicemodule:spacecraft\spacecraft3
+  STATUS Orbiting Earth
+  RPOS -4007768.726 4507862.450 2533026.168
+  RVEL -673.2875 3356.9794 -7032.1606
+  AROT 141.617 9.907 -143.798
+  ATTACHED 0:0,Soyuz
+  AFCMODE 7
+  PRPLEVEL 0:1.000000
+  NAVFREQ 0 0
+  RCS 1
+  CTRL_SURFACE 1
+  CONFIGURATION 1
+  CURRENT_PAYLOAD 0
+  SEQ 0 2 1.000000
+END
+END_SHIPS
