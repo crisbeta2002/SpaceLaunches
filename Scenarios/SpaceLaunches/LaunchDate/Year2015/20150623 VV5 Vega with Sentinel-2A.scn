@@ -1,16 +1,23 @@
-BEGIN_DESC
-Launch Vega with Sentinel-2A(1130kg) from Kourou ELV on June 23rd, 2015 01:52 UTC. Target Orbit 787km x 788km x 98.58deg. The Sentinel Satellite Fleet is part of the Copernicus program – the European Commission's Earth Observation Program formerly known as GMES (Global Monitoring for Environment and Security). Copernicus aims to achieve an autonomous and operational Earth observation capacity.
+BEGIN_HYPERDESC
+<h1>Launch Vega from Kourou ELV with Sentinel-2A</h1>
 
-Time: T-30 seconds to launch. Automatic launch sequence started.
-
-Required add-ons:
-
-- Vega launcher(http://www.orbithangar.com/searchid.php?ID=2546)
-
-- Spacecraft4(http://francophone.dansteph.com/?page=addon&id=202)
-
-- Multistage2015 - for Orbiter 2016(http://orbithangar.com/searchid.php?ID=7010)
-END_DESC
+<p><b>Launch date: June 23rd, 2015 01:52 UTC</b></p>
+<p><b>Launch site: Kourou ELV</b></p>
+<p><b>Launch vehicle: Vega</b></p>
+<p><b>Orbit: SSO - 787km x 788km x 98.58deg</b></p>
+<p><b>Payload: Sentinel-2A(1130kg)</b></p>
+<br><br>
+<p>Launch is automated. T-30s to launch. Press J to jettison payload. Press G to deploy solar array after payload jettison</p>
+<br><br>
+<p>Launch Vega with Sentinel-2A(1130kg) from Kourou ELV on June 23rd, 2015 01:52 UTC. Target Orbit 787km x 788km x 98.58deg. The Sentinel Satellite Fleet is part of the Copernicus program – the European Commission's Earth Observation Program formerly known as GMES (Global Monitoring for Environment and Security). Copernicus aims to achieve an autonomous and operational Earth observation capacity.</p>
+<br><br>
+<p>Required add-ons</p>
+<ul>
+  <li>Vega launcher - http://www.orbithangar.com/searchid.php?ID=2546</li>
+  <li>Spacecraft4 - http://francophone.dansteph.com/?page=addon&id=202</li>
+  <li>Multistage2015 - http://orbithangar.com/searchid.php?ID=7010</li>
+</ul> 
+END_HYPERDESC
 
 BEGIN_ENVIRONMENT
   System Sol
