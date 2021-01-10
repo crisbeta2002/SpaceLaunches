@@ -1,0 +1,180 @@
+BEGIN_HYPERDESC
+<h1>Proton-K with Salyut1(18500kg) from Baikonur LC81/24</h1>
+
+<p><b>Launch date: April 19th, 1971 01:40:00UTC</b></p>
+<p><b>Launch site: Baikonur LC81/24</b></p>
+<p><b>Launch vehicle: Proton-K</b></p>
+<p><b>Orbit: LEO - 180km x 214km x 51.40deg</b></p>
+<p><b>Payload: Salyut1(18425kg)</b></p>
+<br><br>
+<p>Salyut 1 (DOS-1) (English translation: Salute 1) was the first space station of any kind, launched by the Soviet Union on April 19, 1971. More stations followed in the Salyut program, and heritage of that space station program is still in use on the ISS.</p>
+<p>Salyut 1 originated as a modification of the military Almaz space station program then in development. After the landing of Apollo 11 on the Moon in July 1969, the Soviets began shifting the primary emphasis of their manned space program to orbiting space stations, with a possible lunar landing later in the 1970s if the N-1 booster became flight-worthy (which it didn't). One other motivation for the space station program was a desire to one-up the US Skylab program then in development. The basic structure of Salyut 1 was adapted from the Almaz with a few modifications and would form the basis of all Soviet space stations through Mir.</p>
+<p>Civilian Soviet space stations were internally referred to as "DOS" stations, although publicly, the Salyut name was used for all Almaz and DOS stations. Several military experiments were nonetheless carried on Salyut 1, including the OD-4 optical visual ranger, the Orion ultraviolet instrument for characterizing rocket exhaust plumes, and the highly classified Svinets radiometer.(https://en.wikipedia.org/wiki/Salyut_1)</p>
+<p>Launch was planned for April 12, 1971 to coincide with the 10th anniversary of Yuri Gagarin's flight on Vostok 1, but technical problems delayed it until the 19th(https://en.wikipedia.org/wiki/Salyut_1).</p>
+<h1>Required add-ons:</h1>
+<ul>
+<li>Pad24 UR500 O2016 V4(https://www.orbithangar.com/searchid.php?ID=7176)</li>
+<li>Soyuz 7K series(http://www.orbithangar.com/searchid.php?ID=5160)</li>
+<li>Multistage2015 - for Orbiter 2016(http://orbithangar.com/searchid.php?ID=7010)</li>
+</ul>
+
+END_HYPERDESC
+
+BEGIN_ENVIRONMENT
+  System Sol
+  Date MJD 41060.069097
+END_ENVIRONMENT
+
+BEGIN_FOCUS
+  Ship Proton-K
+END_FOCUS
+
+BEGIN_CAMERA
+  TARGET Proton-K
+  MODE Extern
+  POS 16.615826 -135.181794 -42.789875
+  TRACKMODE GlobalFrame
+  FOV 50.00
+END_CAMERA
+
+BEGIN_HUD
+  TYPE Surface
+END_HUD
+
+BEGIN_MFD Left
+  TYPE Surface
+  SPDMODE 1
+END_MFD
+
+BEGIN_MFD Right
+  TYPE Orbit
+  PROJ Frame
+  FRAME Equator
+  REF Earth
+END_MFD
+
+BEGIN_SHIPS
+Proton-K:Multistage2015
+  STATUS Landed Earth
+  POS 62.9847654 46.0709434
+  HEADING 359.68
+  RCSMODE 2
+  PRPLEVEL 0:1.000 1:1.000 2:1.000
+  NAVFREQ 0 0
+  CONFIG_FILE Config\SpaceLaunches\Proton\ProtonK-Salyut1.ini
+  GUIDANCE_FILE Config\SpaceLaunches\Proton\ProtonK-Salyut1.txt
+  CONFIGURATION 0
+  STAGE_STATE 2
+  STAGE_IGNITION_TIME 0.000
+  CURRENT_BOOSTER 1
+  CURRENT_STAGE 1
+  CURRENT_INTERSTAGE 1
+  CURRENT_PAYLOAD 1
+  FAIRING 1
+  ALT_STEPS 100,350,4200,35000
+  PEG_PITCH_LIMIT 35.000
+  PEG_MC_INTERVAL 0.100
+  GNC_RUN 1
+  GNC_PROGRAM 0
+  GNC_STEP 1
+  GNC_AUTO_JETTISON 1.000000
+END
+ProtonTrain:spacecraft\spacecraft3
+  STATUS Landed Earth
+  POS 62.9847639 46.0708662
+  HEADING 27.15
+  ALT -0.000
+  AROT 97.933 32.494 -41.376
+  ATTACHED 0:1,Socle
+  AFCMODE 7
+  NAVFREQ 0 0
+  RCS 1
+  CTRL_SURFACE 1
+  CONFIGURATION 1
+  CURRENT_PAYLOAD 0
+  SEQ 0 2 0.186530
+  SEQ 1 -2 0.000000
+  SEQ 2 -2 0.000000
+  SEQ 3 -2 1.000000
+END
+ProtonTower:spacecraft\spacecraft3
+  STATUS Landed Earth
+  POS 62.9847639 46.0708662
+  HEADING 27.15
+  ALT -0.000
+  AROT 97.933 32.494 -41.376
+  ATTACHED 0:0,Socle
+  AFCMODE 7
+  NAVFREQ 0 0
+  CONFIGURATION 1
+  CURRENT_PAYLOAD 0
+  SEQ 0 2 0.356375
+  SEQ 1 2 1.000000
+  SEQ 2 -2 0.000000
+  SEQ 3 -2 0.000000
+  SEQ 4 -2 0.000000
+  SEQ 5 -2 0.000000
+  SEQ 6 -2 0.000000
+  SEQ 7 -2 0.000000
+  SEQ 8 -2 0.000000
+  SEQ 9 -2 0.000000
+  SEQ 10 -2 0.000000
+END
+ProtonLights:spacecraft\spacecraft3
+  STATUS Landed Earth
+  POS 62.9847639 46.0708662
+  HEADING 27.15
+  ALT -0.000
+  AROT 97.933 32.494 -41.376
+  ATTACHED 0:2,Socle
+  AFCMODE 7
+  PRPLEVEL 0:1.000000
+  NAVFREQ 0 0
+  CONFIGURATION 1
+  CURRENT_PAYLOAD 0
+END
+MS_LaunchPad_ProtonK:Ghost_PAD24
+  STATUS Landed Earth
+  POS 62.9847654 46.0709434
+  HEADING 359.68
+  ALT -0.011
+  AROT 49.364 -18.369 160.157
+  ATTACHED 0:0,ProtonTrain
+  AFCMODE 7
+  NAVFREQ 0 0
+END
+MS_LaunchPad_Socle:EmptyModule
+  STATUS Landed Earth
+  POS 62.9847639 46.0708662
+  HEADING 360.00
+  ALT -0.011
+  AROT 49.364 -18.369 159.837
+  AFCMODE 7
+  NAVFREQ 0 0
+END
+Socle:Socle24\Socle24
+  STATUS Landed Earth
+  POS 62.9847639 46.0708662
+  HEADING 0.00
+  ALT -0.001
+  AROT 49.364 -18.369 159.837
+  ATTACHED 0:0,MS_LaunchPad_Socle
+  AFCMODE 7
+  NAVFREQ 0 0 0 0
+  XPDR 0
+  CONFIG_FILE Config\Socle24\socle24.ini
+  CONFIGURATION 0
+  CURRENT_BOOSTER 1
+  CURRENT_STAGE 1
+  CURRENT_INTERSTAGE 1
+  CURRENT_PAYLOAD 1
+  FAIRING 0
+  MET 0.000
+  STAGE_IGNITION_TIME 0.000000
+  STAGE_STATE 1
+  ALT_STEPS 100.0,350.0,1400.0,35000.0
+  PEG_PITCH_LIMIT 35.000
+  PEG_MC_INTERVAL 0.100
+  RAMP 
+END
+END_SHIPS
